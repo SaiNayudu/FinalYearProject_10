@@ -10,7 +10,7 @@ function VerifyHash() {
 
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/media/verify/${hash}`
+        `https://finalyearproject-10.onrender.com/api/media/verify/${hash}`
       );
       setResult(res.data);
     } catch (error) {
